@@ -6,23 +6,18 @@ namespace BetterDecorador
     {
         /// <summary>
         /// Defines what each of the components the user gives are
-        /// Organizes them with the 
+        /// And changes the default string type to the correct type needed to handle the given input
         /// </summary>
         /// <param name="args">The args on the method Decor()</param>
             private static void Main(string[] args)
             {
+                if (args.Length < 3)
+            {
+                Console.WriteLine(Decor("User did not specify args !", '=', 3));
+                return;
+            }
                 Console.WriteLine(Decor(args[0], char.Parse(args[1]), int.Parse(args[2])));
             }
-
-
-
-
-
-
-
-
-
-
             
             /// <summary>
             /// Creates a string that keeps adding the character given to the string, so it can later print
@@ -45,10 +40,5 @@ namespace BetterDecorador
                 /// x is given by the user
                 return $"{realsymbol} {phrase} {realsymbol}";
             }
-
-            if (Decor() != true)
-            {
-                private static string Decor(string phrase "User did not specify args!", char symbol =, int numbers = 3)
-            }
-    }
+    }  
 }
