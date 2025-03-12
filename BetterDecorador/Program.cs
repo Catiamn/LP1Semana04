@@ -13,6 +13,17 @@ namespace BetterDecorador
             {
                 Console.WriteLine(Decor(args[0], char.Parse(args[1]), int.Parse(args[2])));
             }
+
+
+
+
+
+
+
+
+
+
+            
             /// <summary>
             /// Creates a string that keeps adding the character given to the string, so it can later print
             /// the correct number of times
@@ -35,6 +46,9 @@ namespace BetterDecorador
                 return $"{realsymbol} {phrase} {realsymbol}";
             }
 
-            private static string Decor("User did not specify args !", ’=’, 3)
-        }
+            if (Decor() != true)
+            {
+                private static string Decor(string phrase "User did not specify args!", char symbol =, int numbers = 3)
+            }
     }
+}
