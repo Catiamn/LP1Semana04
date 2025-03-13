@@ -6,14 +6,14 @@ namespace Special
     {
         private static void Main(string[] args)
         {
-            Console.ReadLine("Insert n-th number of the special sequence:");
-            int n = int.Parse();
+            Console.Write("Insert n-th number of the special sequence:");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(GetSpecial(n));
+            
         }
 
         private static int GetSpecial( int n)
         {
-
-            while (n > 0 ; n - 1)
             if (n == 0) return 0;
             if (n == 1) return 1;
             return GetSpecial(n - 1) + 2 * GetSpecial(n - 2);
